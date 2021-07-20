@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .profiler-result{
+     display: none;
+ }
+ .wrapper, body, html {
+    min-height: 100%;
+}
+.layout-navbar-fixed .wrapper .main-header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1037;
+}
+.layout-navbar-fixed .wrapper .main-header{
+    margin-left: 250px;
+}
+aside.main-sidebar.sidebar-dark-primary{
+    bottom: 0;
+    float: none;
+    height: 100vh;
+    width: 250px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    background-color: #343a40;
+}
+.main_content{
+    margin-left: 250px;
+    margin-top: calc(3.5rem + 1px);
+    /* background: #f4f6f9; */
+}
+.main-footer{
+    margin-left: 250px;
+    border-top: 1px solid #dee2e6;
+    color: #869099;
+    padding: 1rem;
+}
+a{
+    color: #c2c7d0;
+}
+
+.small-box>.small-box-footer {
+    background-color: rgba(0,0,0,.1);
+    color: rgba(255,255,255,.8);
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+.small-box .icon{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 60px;
+}
+.ion-pie-graph:before {
+    content: "\f2a5";
+}
