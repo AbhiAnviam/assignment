@@ -12,7 +12,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
- <body class="sidebar-mini layout-fixed layout-navbar-fixed">
+ <body class="sidebar-mini layout-fixed layout-navbar-fixed sidebar-collapse main_body">
  <div class="container-fluid">
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
@@ -36,15 +36,9 @@
         <%= render "base/header" %>
         <%= render "base/sidebar" %>
         <div class="content-wrapper main_content">
-          <div class="content-header">
-            
-          </div>
-
-          <div class="content">
             <div class="container-fluid">
               <%= yield %>
             </div>
-          </div>
           </div>
          <%= render "base/footer"%>
         <%= render "base/control_sidebar" %>

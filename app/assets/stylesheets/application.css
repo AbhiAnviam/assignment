@@ -72,3 +72,6 @@ a{
 .ion-pie-graph:before {
     content: "\f2a5";
 }
+.toggle_margin{
+    margin-left: 50px !important;
+}
